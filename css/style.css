@@ -1,0 +1,321 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+nav{
+    position:sticky;
+    top:0;
+    left:0;
+    width:100%;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 3px 3px 14px rgb(39, 39, 39), -3px -3px 28px rgb(39, 39, 39);
+}
+#nav1 .info{
+    display:flex;
+    padding :0px;
+    text-align: right;
+    color: white;
+}
+#nav1 .info #phone{
+    width:25%;
+    background-color: rgb(35, 175, 218);
+    padding: 1rem 1rem;
+    margin:0;
+    padding-right: 2rem;
+}
+#nav1 .info #socialMedia{
+    width:75%;
+    background-color: rgba(36, 36, 36, 0.904);
+    padding: 1rem 1rem;
+    margin:0;
+    padding-right: 2rem;
+}
+#nav1 .info #socialMedia a{
+    color: white;
+}
+#nav1 .info #socialMedia a:hover{
+    color: rgb(194, 194, 194);
+    text-decoration: none;
+}
+#nav1 .navigation{
+    display:flex;
+}
+.logo{
+    display : flex;
+    align-items: center;
+    font-size: 3rem;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+.logo h1{
+    font-weight: bold;
+    font-size: 3rem;
+    font-style: italic;
+    margin: 0;
+}
+#nav1 .option{
+    width:75%;
+    display:flex;
+    justify-content: center;
+    margin:0;
+}
+#nav1 .option li{
+    list-style: none;
+    padding:1.7rem 1.7rem;
+    margin:0.5rem 1.5rem;
+}
+#nav1 .option li a:hover{
+    color:rgb(97, 95, 95);
+}
+#nav1 .option .services{
+    position :relative;
+    display:inline-block;
+    cursor:pointer;
+}
+#nav1 .option .services:hover{
+    color:rgb(97, 95, 95);
+}
+#nav1 .option .services .service-content{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: rgba(12, 11, 11, 0.918);
+    display: none;
+    width: 131%;
+    padding: 2rem 2rem;
+    z-index: 1;
+    line-height: 3rem;
+}
+#nav1 .option .services .service-content a{
+    display: block;
+    color: white;
+}
+#nav1 .option .services .service-content a:hover{
+    color:rgb(182, 185, 187);
+}
+#nav1 .option li {
+    font-size: 1.5rem;
+    font-weight: bold;  
+    text-align: center;
+}
+#nav1 .option li a{
+    color:black;
+    text-decoration: none;
+}
+#nav2{
+  display: none;
+}
+#nav2 .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;   
+}
+#nav2 .navigation .slider{
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+}
+#nav2 .navigation .slider:hover{
+    color: #686767;
+    cursor: pointer;
+}
+#nav2 .navigation .logo{
+    margin-left:0;
+}
+#nav2 .option{
+    padding: 1rem;
+    display: none;
+    background-color: rgba(14, 18, 26, 0.876);
+}
+#nav2 .option ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 0;
+}
+#nav2 .option li{
+    list-style: none;
+}
+#nav2 .option li a{
+    font-size: 1.7rem;
+    color:white;
+    font-weight: bold;
+    line-height: 1.7;
+}
+#nav2 .option li a:hover{
+    text-decoration: none;
+    color: rgb(106, 200, 231)
+}
+/* top icon */
+#topIcon{
+    position: fixed;
+    right: 13px;
+    bottom: 50px;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 55px;
+    box-shadow: 3px 3px 14px rgb(39, 39, 39), -3px -3px 28px rgb(39, 39, 39);
+    z-index: 1;
+}
+#topIcon a{
+    font-size: 3rem;
+    color: black;
+}
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background:  linear-gradient(#d6d6f1,#fb4c07,#ff00b3,#4a38ea,#38bffe);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 100000vh black;
+  }
+.footer1{
+    padding: 1rem 3rem;
+    background-color: rgba(14, 18, 26, 0.876);
+    color: #ffffffe6;
+}
+.footer1 .part1{
+   display: flex;
+}
+.footer1 .part1>div{
+   width: 25%;
+   padding: 1rem 1rem;
+}
+.footer1 .part1>div h3{
+    font-size: 1.7rem;
+}
+.footer1 .part1>div h3::after{
+    content:"";
+    display: block;
+    width:15%;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #03A9F4;   
+}
+.footer1 .part1 .Address > div{
+   margin-bottom: 1rem;
+}
+.footer1 .part1 .Address .content4 h5{
+   font-size: 1.6rem;
+}
+.footer1 .part1 .recent_post .post{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer1 .part1 .recent_post .post .post-image{
+    width: 40%;
+    display: inline;
+    margin-right: 1rem;
+}
+
+.footer1 .part1 .recent_post .post .post-image img{
+    width: 100%;
+    height: auto;
+}
+.footer1 .part1 .recent_post .post h4{
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+.footer1 .tags a{
+    display: flex;
+    align-items: center;
+    color: #ffffffe6;
+}
+.footer1 .tags a:hover{
+    color: rgb(129, 129, 129);
+    text-decoration: none;
+    
+}
+.footer1 .tags a i{
+    margin-right: 7px;
+    font-size: 1.7rem;
+}
+.footer1 .insta_photo .photos{
+    display: grid;
+    grid-template-columns: 85px 85px 85px;
+    grid-gap: 5px 5px;
+    
+}
+.footer1 .insta_photo .photos img{
+    width: 85px;
+    height: 85px;
+    transition: all 0.5s;
+}
+.footer1 .insta_photo .photos img:hover{
+    transform: scale(2);
+}
+.footer1 .copyright{
+    display: flex;
+    justify-content: space-between;
+}
+.footer1 .copyright .social_platform a{
+    color: #ffffffe6;
+    margin: 0 1.5rem;
+}
+.footer1 .copyright .social_platform a:hover{
+  color: rgb(129, 129, 129);
+  text-decoration: none;
+}
+.footer1 hr{
+    border: 0.5px solid #777777;
+}
+.footer2{
+    display: none;
+    padding: 1rem 1rem;
+    background-color: rgba(14, 18, 26, 0.876);
+    color: #ffffffe6;
+}
+.footer2 .copyright{
+    display: flex;
+    justify-content: space-between;
+}
+.footer2 .copyright .social_platform a{
+    color: #ffffffe6;
+    margin: 0 1.5rem;
+}
+.footer2 .copyright .social_platform a:hover{
+  color: rgb(129, 129, 129);
+  text-decoration: none;
+}
+.footer2 hr{
+    border: 0.5px solid #777777;
+}
+@media only screen and (max-width:963px) {
+    #nav1{
+        display: none;
+    }
+    #nav2{
+        display: block;
+    }
+    /* footer */
+    .footer1{
+        display: none;
+    }
+    .footer2{
+        display: block;
+    }
+  }
+@media only screen and (max-width:450px) {
+    .logo{
+        font-size: 2rem;
+    }
+    .logo img{
+        width: 70px;
+        height: 70px;
+    }
+    .logo h1{
+        font-weight: bold;
+        font-size: 2rem;
+        font-style: italic;
+        margin: 0;
+    }
+  }

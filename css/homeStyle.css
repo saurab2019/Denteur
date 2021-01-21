@@ -1,0 +1,630 @@
+*{
+    box-sizing: border-box;
+}
+header .carousel-inner .item{
+    width:100%;
+    height:70vh;
+}
+header .carousel-inner .item img{
+    width:100%;
+    height:100%;
+    object-fit: cover; 
+    opacity: 0.9;  
+}
+header .carousel-inner .item .carousel-caption{
+    color:black;
+}
+header .carousel-inner .item .carousel-caption h3{
+    font-size: 4rem;
+    font-weight: bold;
+}
+header .carousel-inner .item .carousel-caption p{
+    font-size: small;
+}
+.visit{
+    flex-flow: row wrap;
+    display: none;
+}
+.visit > div{
+    width:33.33%;
+    padding: 1rem;
+}
+.visit #image::before{
+    content:"";
+    background: url("../images/background3.jpg") no-repeat center center/cover;
+    position: absolute;
+    top :0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-20;
+}
+.visit #image::after{
+    content:"";
+    background-color: rgb(17 137 206 / 61%);
+    position: absolute;
+    top :0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+.visit #image{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.visit #image #calllogo{
+    font-size: xx-large;
+    margin:0 10px;
+}
+.visit #image #phoneNo h4{
+    font-size: 2rem;
+    line-height: 1.2;
+}
+.visit #timing {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.visit #timing #timing-content{
+    text-align: center;
+    width:90%;
+}
+.visit #timing #timing-content h3{
+    padding-bottom: 1rem;
+}
+.visit #timing #timing-content table{  
+    width:100%;
+}
+#booking{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(35, 175, 218);
+}
+#booking #booking-content{
+    position: relative;
+    width:90%;
+    text-align: center;
+    color:white;
+}
+#booking #booking-content h3{
+    padding-bottom: 2rem;
+    margin: 0;
+}
+#booking #booking-content form input{
+    text-align: center;
+    width:40%;
+    border-radius: 10px;
+    padding:.5rem .5rem;
+    margin:.5rem .5rem;
+    outline: none;
+}
+#booking #booking-content form input:focus{
+    background-color: #c6caca;
+}
+#booking #booking-content form input[type="submit"]{
+    background-color: rgb(160, 43, 43);
+}
+#booking #booking-content form input[type="submit"]:focus{
+    background-color: rgb(119, 56, 56);
+}
+/* intro */
+.intro{
+    padding: 1rem 1rem;
+}
+.intro h1{
+    text-align: center;
+}
+.intro-content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.intro-content #welcome{
+    width:60%;
+    padding: 2rem 2rem;
+    text-align: justify;
+}
+.intro-content #videos{
+    width:40%;
+    padding: 2rem 2rem;
+}
+.intro #video{
+    display: inline-block;
+}
+.intro #welcome{
+    line-height: 2.5rem;
+}
+.intro #welcome ul{
+    line-height: 2.5rem;
+
+}
+.intro #welcome p{
+   font-size: 1.5rem;
+}
+.intro #welcome ul li{
+   list-style: none;
+   font-size: 1.5rem;
+}
+.intro #welcome ul li i{
+   color:rgb(45, 223, 45);
+   margin:0rem 0.7rem;
+}
+.intro video{
+    opacity: 0;
+}
+
+/* why us */
+.whyus{
+    background-color: rgba(14, 18, 26, 0.876);
+    padding: 1rem 1rem;
+}
+.whyus h2{
+    color: white;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    border-left: 5px solid #03A9F4;
+}
+.whyus-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.whyus #image{
+    width:30%;
+    padding: 1rem 1rem;
+}
+.whyus #image img{
+   width:100%;
+   object-fit: cover;
+   object-position: center;
+}
+.whyus #reason{
+    padding: 1rem 1rem;
+    width:70%;
+    color: white;
+}
+.whyus #reason hr{
+    border:1px solid #03A9F4;
+}
+.whyus #part {
+    display:flex;
+    opacity: 0;
+}
+.whyus #part .basic_intro {
+    display:flex;
+    padding :0rem 2rem;
+    margin:1rem 0rem;
+    margin-top: 0;
+}
+.whyus #reason #part .basic_intro .logo1{
+    font-size: x-large;
+    align-self: center;
+    margin:0 2rem;
+    color:#03A9F4
+}
+.whyus #reason p{
+    font-size: 1.5rem;
+}
+.past_record{
+    color:white;
+    background-color: #03A9F4;
+    display: flex;
+    justify-content: space-around;
+    display: none;
+
+}
+.past_record>div{
+    text-align: center;
+    margin:2rem 2rem;
+}
+.past_record .logo2{
+    font-size: 5rem;
+}
+.past_record h4{
+    font-size: large;
+    font-weight: bold;
+}
+.past_record h6{
+    font-size: 1.5rem;
+}
+#service2{
+    text-align: center;
+    margin:2rem 2rem;
+}
+#service2 h2{
+    font-weight: bold;
+}
+#service2 h2::after{
+    content:"";
+    display: block;
+    margin: 0 auto;
+    width:20%;
+    padding:1rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 4px solid #03A9F4;
+}
+#service2 hr{
+    border:1px solid #03A9F4;
+}
+#service2 >div{
+ padding: 1rem 1rem;
+ display:flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+}
+#service2 .card1{
+    width: 260px;
+    margin: 1rem 1rem;
+    border: 2px solid #2c3438ba;
+    padding: 1rem 1rem;
+    box-shadow: 2px 2px 10px #ad9b9b, -2px -2px 10px #ad9b9b;
+}
+#service2 .card1:hover{
+    background-color: #e6e6e6;
+}
+#service2 .card1 h3{
+    font-weight: bold;
+}
+#service2 .card1 .logo3{
+    display: inline-block;
+    font-size: 5rem;
+    color: #03A9F4;
+    padding: 1rem 2rem;
+    border-radius: 40px 44px;
+    background-color: rgb(189 184 184 / 60%);
+}
+#service2 .card1 a{
+    font-weight: bold;
+    color:#03A9F4;
+    font-size: 1.5rem;
+}
+#testimonial{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 2rem;
+    justify-content: center;
+    color:white;
+}
+
+#testimonial::before{
+    content:"";
+    background: url("../images/smiling_motherSon.jpg") no-repeat center center/cover;
+    position: absolute;
+    top :0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-20;
+}
+#testimonial::after{
+    content:"";
+    background-color: rgba(11, 15, 22, 0.911);;
+    position: absolute;
+    top :0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+#testimonial #description{
+    width: 280px;
+}
+#testimonial #description h2{
+    font-weight: bold;
+}
+#testimonial #description h2::after{
+    content:"";
+    display: block;
+    width:20%;
+    padding:1rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 4px solid #03A9F4;
+}
+#testimonial #testimonial_content{
+    width:60%;
+}
+#testimonial #testimonial_content .content_item{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+    
+}
+#testimonial #testimonial_content .content_item > div{
+    width:260px;
+    font-size: 1.5rem;
+    margin:2rem 2rem;
+    padding:2rem 2rem;
+    background-color: white;
+    color:black;
+    text-align: justify;
+    border-radius: 5px;
+}
+#testimonial #testimonial_content .content_item .testimonial1  h6{
+    text-align: right;
+    font-size: 1.5rem;
+}
+#testimonial #testimonial_content .content_item .testimonial1  .grade{
+   text-align: right;
+   color:rgba(218, 192, 49, 0.972);
+}
+#better_dentistry {
+    padding: 2rem;
+}
+#better_dentistry #content3{
+    width:100%;
+    min-width: 260px;
+    padding: 3rem 3rem;
+    padding-top: 2rem;
+}
+#better_dentistry #content3 h2{
+    font-weight: bold;
+    padding-left: 1rem;
+    border-left: 5px solid #03A9F4;
+}
+#better_dentistry #image2{
+    width: 300px;
+    min-width: 260px;
+    float : right;
+    margin: 1rem 1rem;
+}
+#better_dentistry #image2 img{
+    width: 100%;
+    height:auto;
+    object-position: center;
+    object-fit: cover;
+}
+.care_smile{
+    padding:3rem;
+    position: relative;
+    background: url("../images/brushing-baby2.jpg") no-repeat center center/cover;
+}
+.care_smile #content4{
+    width: 40%;
+    min-width: 270px;
+    border-left:5px solid  #03A9F4;
+    background-color: white;
+    position: relative;    
+    padding: 2rem 2rem;
+    padding-bottom: 3rem;
+    opacity: 0;
+}
+.care_smile #content4 h2{
+    font-weight: bold;
+    font-style: italic;   
+}
+
+.recentNews{
+    text-align: center;
+    margin:2rem 2rem;
+}
+.recentNews h2{
+    font-weight: bold;
+    font-size: large;
+}
+.recentNews >h2::after{
+    content:"";
+    display: block;
+    margin: 0 auto;
+    width:20%;
+    padding:1rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 4px solid #03A9F4;
+}
+.recentNews hr{
+    border:1px solid #03A9F4;
+}
+
+.recentNews .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+.recentNews .ct-blog {
+    width: 340px;
+    min-width: 270px;
+    box-shadow: 2px 2px 10px #ad9b9b, -2px -2px 10px #ad9b9b;
+    padding: 0 0;
+}
+.ct-blog .inner {
+    background-color: #FFF;
+    transition: all 0.2s ease-in-out 0s;
+    cursor: pointer;
+    height: 100%;
+}
+.ct-blog .inner:hover {
+    background-color: #e6e6e6;
+}
+.ct-blog .fauxcrop {
+    height: 180px;
+    overflow: hidden;
+}
+.ct-blog .fauxcrop img {
+    width: 100%;
+    object-fit: cover;
+}
+.ct-blog-content {
+    display: table;
+    padding: 17px 0 17px;
+}
+.ct-blog-content .ct-blog-date {
+    border-right: 1px solid #95A5A6;
+    display: table-cell;
+    padding: 0px 18px 0px 15px;
+    text-align: center;
+}
+.ct-blog-content .ct-blog-date span {
+    font-size: 16px;
+    color: rgb(20, 117, 175);  
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+}
+.ct-blog-content .ct-blog-date strong {
+    font-size: 25px;
+    color: rgb(20, 117, 175);  
+}
+.ct-blog-content .ct-blog-header {
+    color: #100f0f;
+    display: table-cell;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -0.2px;
+    line-height: 1.1;
+    padding: 0 20px;
+    vertical-align: top;
+}
+.recentNews .news-box h2{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.recentNews .news-box h2 a:hover{
+    text-decoration: none;
+    color: rgb(91, 175, 224);
+}
+
+@media only screen and (max-width:970px) {
+    .whyus-content #reason{
+    width: 100%;
+}
+.whyus-content #image{
+       display: none;
+    }
+}
+@media only screen and (max-width:670px) {
+   /* intro */
+   .intro-content #videos{
+       width: 100%;
+   }
+   .intro-content #welcome{
+       width: 100%;
+       text-align: center;
+    }
+}
+@media only screen and (max-width:570px) {
+    /* header */
+    #myCarousel .item p{
+        display: none;
+    }
+    #myCarousel .item h3{
+        font-size: 3rem;
+    }
+    #myCarousel .item{
+        height: 50vh;
+    }
+    /* visit */
+    .visit{
+        flex-wrap: wrap;
+    }
+    .visit #image{
+        width: 50%;
+    }
+    .visit #timing{
+        width: 50%;
+    }
+    .visit #booking{
+        width: 100%;
+    }
+    /* whyus */
+    .whyus-content #part{
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Testimonial */
+    #testimonial #testimonial_content{
+        width:100%;
+    }
+    #testimonial #testimonial_content .content_item > div{
+        font-size: 1.5rem;
+        margin:2rem 1rem;
+        padding:2rem 2rem;
+    }
+    #testimonial #description{
+        width: 280px;
+        text-align: center;
+    }
+    /* care smile */
+    .care_smile{
+        display: flex;
+        justify-content: center;
+        background: url("../images/background2.jpg") repeat center center/cover;
+    }
+    .care_smile #content4{
+        width: 80%;
+        min-width: 270px;
+    }
+}
+@media only screen and (max-width:450px) {
+    /* intro */
+    #myCarousel .item p{
+        display: none;
+    }
+    #myCarousel .item h3{
+        font-size: 3rem;
+    }
+    #myCarousel .item{
+        height: 50vh;
+    }
+    /* visit */
+    .visit{
+        flex-wrap: wrap;
+    }
+    .visit #image{
+        width: 100%;
+    }
+    .visit #timing{
+        width: 100%;
+    }
+    .visit #booking{
+        width: 100%;
+    }
+    /* past record */
+    .past_record{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .past_record>div{
+        width:40%;
+        margin:1rem 1rem;
+    }
+    .past_record .logo2{
+        font-size: 3rem;
+    }
+    .past_record h4{
+        font-size: medium;
+        font-weight: bold;
+    }
+    .past_record h6{
+        font-size: 1.3rem;
+    }
+    /* testimonial */
+    #testimonial #description h2::after{
+        width:100%;
+    }
+    /* better dentistry */
+    #better_dentistry {
+        padding: 2rem 1rem;
+    }
+    #better_dentistry #content3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #better_dentistry #content3 p{
+        text-align: center;
+    }
+    /* news */
+    .recentNews .ct-blog {
+        margin: 1rem 1rem;
+    }
+}

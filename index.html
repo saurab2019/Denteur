@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denteur</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/homeStyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" type="image/jpg" href="./images/denteurlogo.svg" sizes="32X32" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/homeScript.js"></script>
+</head>
+<body>
+    <nav id="nav1">
+        <div class="info">
+            <h4 id="phone"><i class="fas fa-phone"></i> Ph: +1800 722 8987</h4>
+            <h4 id="socialMedia">
+                <i class="fas fa-envelope" title="gmail"></i>
+                    &nbsp; info@denteur.com &nbsp;|&nbsp;
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"
+                        title="facebook"></i></a> &nbsp;
+                <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"
+                        title="twitter"></i></a>&nbsp;
+                <a href="https://in.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"
+                        title="linkedIn"></i>&nbsp;</a>
+            </h4>
+        </div>
+        <div class="navigation">
+            <div class="logo">
+                <img src="./images/denteurlogo.svg" alt="Denteur">
+                <h1>DENTEUR</h1>
+            </div>
+            <ul class="option">
+                <li class="home"><a href="./index.html" title="Home">HOME</a></li>
+                <li class="services" title="services">SERVICES <i class="fas fa-caret-down"></i>
+                    <div class="service-content">
+                        <a href="./orthodontics.html">Orthodontics</a>
+                        <a href="./endodontics.html">Endodontics</a>
+                        <a href="./familyDentistry.html">Family Dentistry</a>
+                    </div>
+                </li>
+                <li class="about"><a href="./index.html#better_dentistry" title="About Us">ABOUT US</a> </li>
+                <li><a href="./index.html#testimonial" title="Testimonials">TESTIMONIALS</a> </li>
+                <li class="contact"><a href="./contact.html" title="Contact Us">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="nav2">
+        <div class="navigation">
+            <div class="logo">
+                <img src="./images/denteurlogo.svg" alt="Denteur">
+                <h1>DENTEUR</h1>
+            </div>
+            <div class="slider">
+                <i class="fas fa-sliders-h"></i>
+            </div>
+        </div>
+        <div class="option">
+            <ul>
+                <li class="home"><a href="./index.html" title="Home">HOME</a></li>
+                <li class="services"> <a href="./index.html#service2">SERVICES</a></li>
+                <li class="about"><a href="./index.html#better_dentistry" title="About Us">ABOUT US</a> </li>
+                <li><a href="./index.html#testimonial" title="Testimonials">TESTIMONIALS</a> </li>
+                <li class="contact"><a href="./contact.html" title="Contact Us">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="topIcon">
+       <a href="#"><i class="fas fa-chevron-up"></i></a>
+    </div>
+    <header id="head">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+                <div class="item active">
+                    <img src="./images/treatment.jpg" alt="Dental Treatment">
+                    <div class="carousel-caption">
+                        <h3>We are dental experts</h3>
+                        <p>Blessed are those who can hold lively conversations with the helplessly mute, for they shall
+                            be called dentists</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="./images/smile.jpg" alt="Healthy Smile">
+                    <div class="carousel-caption">
+                        <h3>Creating beautiful smiles</h3>
+                        <p>Smile, it lets your teeth breathe</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="./images/brushteeth.jpg" alt="Brushing teeth">
+                    <div class="carousel-caption">
+                        <h3>Regular brushing teeth</h3>
+                        <p>You don’t have to brush your teeth, just the ones you want to keep.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    <section class="visit">
+        <div id="image">
+            <div id="calllogo">
+                <i class="fas fa-phone-volume"></i>
+            </div>
+            <div id="phoneNo">
+                <h4>Get in touch<br><b>+1800 722 8987</b></h4>
+            </div>
+        </div>
+        <div id="timing">
+            <div id="timing-content">
+                <h3><b>Opening Hours</b></h3>
+                <table>
+                    <tr>
+                        <td>Mon to Fri</td>
+                        <td>9:00 AM to 5:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td colspan="100%">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>9:00 AM to 4:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td colspan="100%">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>9:00 AM to 1:00 PM</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="booking">
+            <div id="booking-content">
+                <h3>Book a visit</h3>
+                <form action="#">
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <input type="email" name="email" id="email" placeholder="Email Address" required>
+                    <input type="number" name="phone" id="phone-number" placeholder="Phone Number" pattern="[0-9]{10}">
+                    <input type="submit" value="Send Request">
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="intro">
+        <h1>
+            <b> Welcome to Dental Care Denteur</b>
+        </h1>
+        <div class="intro-content">
+            <div id="welcome">
+                <p>
+                    A general dentist is your primary care provider. This dentist diagnoses,treats and manages your
+                    overall
+                    health care needs, including gum care, root canal, fillings, crowns, veneers, bridges, and
+                    preventive
+                    education.
+                </p>
+                <h3>
+                    <b>Nutrition Special features</b>
+                </h3>
+                <ul>
+                    <li><i class="fas fa-check"></i>Anti-wrinkle treatment.</li>
+                    <li><i class="fas fa-check"></i>Varicose vein treatment.</li>
+                    <li><i class="fas fa-check"></i>Manual Handling training.</li>
+                </ul>
+            </div>
+            <div id="videos">
+                <video width="100%" loop autoplay>
+                    <source src="./videos/workingDentist.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+    <section class="whyus">
+        <h2>
+            <span style="font-size: 1.5rem; font-weight: normal;">WHY US</span><br>Bringing Life to Your Smile
+        </h2>
+        <div class="whyus-content">
+            <div id="image">
+                <img src="./images/treatment2.jpg" alt="Treatment">
+            </div>
+            <div id="reason">
+                <p>
+                    Sharing your toothbrush is a great example of bad habit that can negatively
+                    affect the health of you mouth, there are many bad habits that can have a negative
+                    impact not only on your oral health but also to your physical health. Our aim
+                    is to bring happiness to your smile by safeguard your teeth and teach you basic
+                    dental education.
+                </p>
+                <hr>
+                <div id="part">
+                    <div class="basic_intro">
+                        <div class="logo1">
+                            <i class="fas fa-briefcase-medical"></i>
+                        </div>
+                        <div class="content1">
+                            <h3>Excellence Defined</h3>
+                            <p>We are providing differnet services in this sector to wide.</p>
+                        </div>
+                    </div>
+                    <div class="basic_intro">
+                        <div class="logo1">
+                            <i class="fas fa-teeth-open"></i>
+                        </div>
+                        <div class="content1">
+                            <h3>Stunning Smile</h3>
+                            <p>
+                                We are providing different services to give you stunning smile.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="past_record">
+        <div>
+            <div class="logo2"><i class="fas fa-tooth"></i></div>
+            <h4>12001</h4>
+            <h6>SAVED TEETH</h6>
+        </div>
+        <div>
+            <div class="logo2"><i class="fas fa-user-md"></i></div>
+            <h4>8433</h4>
+            <h6>SPECIALIST DOCTORS</h6>
+        </div>
+        <div>
+            <div class="logo2"><i class="far fa-laugh"></i></div>
+            <h4>2911</h4>
+            <h6>HAPPY CUSTOMERS</h6>
+        </div>
+        <div>
+            <div class="logo2"><i class="fas fa-briefcase-medical"></i></div>
+            <h4>11233</h4>
+            <h6>CLINICS</h6>
+        </div>
+    </section>
+    <section id="service2">
+        <h2>Our Services</h2>
+        <p>Our aim is to protect your beautiful smile. Hence we provide best doctors and services for the treatment of your teeth.
+        </p>
+        <hr>
+        <div>
+            <div class="card1">
+                <div class="logo3">
+                    <i class="fas fa-tooth"></i>
+                </div>
+                <h3>Orthodontic</h3>
+                <p>Dentistry that deals with the diagnosis, prevention, and correction of malpositioned teeth and jaws,
+                    and misaligned bite patterns.</p>
+                <a href="./orthodontics.html">READ MORE</a>
+            </div>
+            <div class="card1">
+                <div class="logo3">
+                    <i class="fas fa-user-nurse"></i>
+                </div>
+                <h3>Endodontic</h3>
+                <p>Dentistry concerning dental pulp and tissues surrounding the roots of a tooth.</p>
+                <a href="./endodontics.html">READ MORE</a>
+            </div>
+            <div class="card1">
+                <div class="logo3">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <h3>Family Dentistry</h3>
+                <p>Concerns with addressing oral health at every stage of life, but particularly in kids and teenagers.
+                </p>
+                <a href="./familyDentistry.html">READ MORE</a>
+            </div>
+        </div>
+    </section>
+    <section id="testimonial">
+        <div id="description">
+            <h2><span style="font-size:1.7rem;"><i>What our patients are saying</i></span><br> Testimonials</h2>
+            <p><b>Find out what most important people, our patients, think of our services.</b></p>
+            <p>Our testimonials are taken from actual patient reviews across our estate. We are very proud to have
+                received such positive feedback.</p>
+        </div>
+        <div id="testimonial_content">
+            <div id="myTestmonial" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myTestimonial" data-slide-to="0" class="active"></li>
+                    <li data-target="#myTestimonial" data-slide-to="1"></li>
+                    <li data-target="#myTestimonial" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+
+                    <div class="item active">
+                        <div class="content_item">
+                            <div class="testimonial1">
+                                <p><q>
+                                        I just wanted to share a quick note and let you know that you guys really a
+                                        good
+                                        job. I am glad that I come to your clinic.
+                                    </q></p>
+                                <h6><b>Richard</b></h6>
+                                <div class="grade">
+                                    <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial1">
+                                <p><q>
+                                        I would like to show my appreciations to all staff at Denteur. They offer
+                                        extremely professional service and always strive to help and accommodate
+                                        patients. Thank you very much for your outstanding treatment, help, and advice.
+                                    </q></p>
+                                <h6><b>Carla</b></h6>
+                                <div class="grade">
+                                    <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content_item">
+                            <div class="testimonial1">
+                                <p><q>
+                                        My dentist is possibly the best dentist I have ever seen both from ability and
+                                        their fantastic people skills. I was made to feel comfortable in what was not
+                                        simple procedures.
+                                    </q></p>
+                                <h6><b>Samuel</b></h6>
+                                <div class="grade">
+                                    <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial1">
+                                <p><q>
+                                        After 55 years of using dentists, finally one that just works. Appointment
+                                        system is brilliant, always very accommodating with times. A reminder SMS is
+                                        sent the working day beforehand. I also had a call confirming appointment
+                                    </q></p>
+                                <h6><b>John Doe</b></h6>
+                                <div class="grade">
+                                    <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content_item">
+                            <div class="testimonial1">
+                                <p><q>Just have to say a very caring dentist who excels in reassuring their patients and
+                                        gives excellent service, explains what they are doing every step of the way
+                                    </q></p>
+                                <h6><b>Martha Smith</b></h6>
+                                <div class="grade">
+                                    <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial1">
+                                <p><q>
+                                        I'd been avoiding the dentist for years due to bad experiences. Then due to a
+                                        gum infection I had to make an emergency appointment at Oundle House Dental
+                                        Practice. My dentist is very reassuring and very helpful.
+                                    </q></p>
+                                <h6><b>Sara Jones</b></h6>
+                                <div class="grade">
+                                    <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="better_dentistry">
+        <div id="content3">
+            <h2>
+                <span style="font-size: 1.7rem;color: rgb(116, 120, 122);">ABOUT DENTEUR</span><br>
+                Simply Better Dentistry
+            </h2>
+            <div id="image2">
+                <img src="./images/orthodontist.jpg" alt="Orthodontist">
+            </div>
+            <p><b><i>Every person in Denteur is essential to your care, so we endeavour to recruit, train and retain the
+                        best people</i></b></p>
+            <p>Everyone who joins us understands our expectations and receives a full induction – to ensure we all share
+                the same ethos of putting our patients at the heart of everything we do.Through teaching, mentoring and
+                regular reviews, we encourage our staff to aim high. And we guide and support those who wish to study
+                further to allow everyone to reach their full potential.</p>
+            <p>By providing a caring environment where professional needs are nurtured in a supportive way, we engender
+                loyalty. As the saying goes – we don’t expect loyalty, we earn it.</p>
+            <p>All teams rely on good communication and our company is structured to ensure communication flows easily.
+                From our central support teams through to our practice teams, we value good communication.</p>
+        </div>
+    </section>
+    <section class="care_smile">
+        <div id="content4">
+            <h2>Care For Your Smile</h2>
+            <p>Having a smile you don’t love don’t just cause you stress, it can actually harm your social and
+                professional life and make you feel physically bad.</p>
+            <p>
+                You know when your smile is less than great. It’s why you hide your smile behind your hand or refuse to
+                let anyone see your teeth. When you don’t smile, people tend to judge you harshly and think you’re
+                unhappy even when you’re in a really good mood. Seeing the dentist on a regular basis for check-ups and
+                to take care of problems keeps your smile looking it’s best.
+            </p>
+        </div>
+    </section>
+    <section class="recentNews">
+        <h2>Latest News</h2>
+        <p>We provide latest news related to dental science and research.</p>
+        <hr>
+        <div class="news-box">
+            <div class="row">
+                <div class="ct-blog col-sm-6 col-md-4">
+                    <div class="inner">
+                        <div class="fauxcrop">
+                            <a href="https://www.dentistrytoday.com/news/todays-dental-news/item/7616-it-s-time-for-dentists-to-stop-pushing-themselves-to-their-limits" target="_blank"><img alt="News Entry" src="./images/news1.jpg"></a>
+                        </div>
+                        <div class="ct-blog-content">
+                            <div class="ct-blog-date">
+                                <span>January</span><strong>14</strong>
+                            </div>
+                            <h3 class="ct-blog-header">
+                                It’s Time for Dentists to Stop Pushing Themselves
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="ct-blog col-sm-6 col-md-4">
+                    <div class="inner">
+                        <div class="fauxcrop">
+                            <a href="https://dentistrytoday.com/news/todays-dental-news/item/7608-3-d-printers-improve-dental-patient-care" target="_blank"><img alt="News Entry" src="./images/news2.jpg"></a>
+                        </div>
+                        <div class="ct-blog-content">
+                            <div class="ct-blog-date">
+                                <span>January</span><strong>15</strong>
+                            </div>
+                            <h3 class="ct-blog-header">
+                                3-D Printers Improve Dental Patient Care
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="ct-blog col-sm-6 col-md-4">
+                    <div class="inner">
+                        <div class="fauxcrop">
+                            <a href="https://www.dentistrytoday.com/news/todays-dental-news/item/7573-the-top-100-dental-products-of-2020" target="_blank"><img alt="News Entry" src="./images/news3.jpg"></a>
+                        </div>
+                        <div class="ct-blog-content">
+                            <div class="ct-blog-date">
+                                <span>February</span><strong>25</strong>
+                            </div>
+                            <h3 class="ct-blog-header">
+                                The Top 100 Dental Products of 2020
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2><a href="https://www.dentistrytoday.com/news/todays-dental-news" target="_blank">READ MORE</a></h2>
+        </div>
+    </section>
+    <footer class="footer1">
+        <div class="part1">
+            <div class="Address">
+                <div class="logo">
+                    <img src="./images/denteurlogo.svg" alt="Denteur">
+                    <h1>DENTEUR</h1>
+                </div>
+                <div class="content4">
+                    <h5> Denteur want to preserve your precious smile</h5>
+                </div>
+                <div id="location">
+                    <i class="fas fa-map-marker"></i> PO BOX 33195 NW South Delhi, India
+                </div>
+                <div id="phoneNo">
+                    <i class="fas fa-phone"></i> Call Us: +1800 722 8987
+                </div>
+                <div id="emailId">
+                    <i class="fas fa-envelope"></i> info@denteur.com
+                </div>
+            </div>
+            <div class="recent_post">
+                <h3>RECENT POSTS</h3>
+                <div class="post">
+                    <div class="post-image">
+                        <img src="./images/post1.jpg" alt="CoronaVirus">
+                    </div>
+                    <div class="post-content">
+                        <h4>
+                            Dentists Already Are Prepared for the Coronavirus
+                        </h4>
+                        <h6>20 Feb, 2020</h6>
+                    </div>
+                </div>
+                <hr>
+                <div class="post">
+                    <div class="post-image">
+                        <img src="./images/post2.jpg" alt="CoronaVirus">
+                    </div>
+                    <div class="post-content">
+                        <h4>
+                            As Dental Offices Close, Try Not to Panic
+                        </h4>
+                        <h6>20 Mar, 2020</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tags">
+                <h3>TAGS</h3>
+                <a href="./index.html#better_dentistry"><i class="fas fa-angle-double-right"></i>
+                    <h5>About Us</h5>
+                </a>
+                <a href="./index.html#testimonial"><i class="fas fa-angle-double-right"></i>
+                    <h5>Testimonials</h5>
+                </a>
+                <a href="./contact.html"><i class="fas fa-angle-double-right"></i>
+                    <h5>Contact Us</h5>
+                </a>
+                <a href="./index.html#service2"><i class="fas fa-angle-double-right"></i>
+                    <h5>Our Services</h5>
+                </a>
+            </div>
+            <div class="insta_photo">
+                <h3>INSTAGRAM PHOTOS</h3>
+                <div class="photos">
+                    <img src="./images/insta_photo1.jpg" alt="insta_photo1">
+                    <img src="./images/insta_photo2.jpg" alt="insta_photo2">
+                    <img src="./images/insta_photo3.jpg" alt="insta_photo3">
+                    <img src="./images/insta_photo4.jpg" alt="insta_photo4">
+                    <img src="./images/insta_photo5.jpg" alt="insta_photo5">
+                    <img src="./images/insta_photo6.jpg" alt="insta_photo6">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <div class="content4">
+                <p>Copyright <i class="far fa-copyright"></i> -Denteur 2021</p>
+            </div>
+            <div class="social_platform">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://in.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+
+            </div>
+        </div>
+    </footer>
+    <footer class="footer2">
+        <div class="copyright">
+            <div class="content4">
+                <p><i class="far fa-copyright"></i> -Denteur 2021</p>
+            </div>
+            <div class="social_platform">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://in.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

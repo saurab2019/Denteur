@@ -1,0 +1,28 @@
+header h1{
+   text-align: center;
+   font-size: xx-large;
+   font-weight: bold;
+}
+main{
+    width: 90%;
+    margin:20px auto;
+    font-family: "Proxima Nova",-apple-system,system-ui,system-ui,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    text-align: justify;
+}
+main img{
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+}
+main p,ul{
+    font-size: 1.8rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+main ul {
+    padding :0 2rem;
+}
+main #defination{
+    font-size: 3rem;
+}
