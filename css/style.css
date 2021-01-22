@@ -86,7 +86,7 @@ nav{
     background-color: rgb(47, 47, 47);
     display: none;
     width: 131%;
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
     z-index: 1;
     line-height: 3rem;
 }
@@ -96,8 +96,11 @@ nav{
     color: white;
     border-bottom:1px solid #38bffe;
 }
+#nav1 .option .services .service-content a:last-child{
+    border-bottom:none;
+}
 #nav1 .option .services .service-content a:hover{
-    color:rgb(182, 185, 187);
+    color:rgb(182, 187, 187);
 }
 #nav1 .option li {
     font-size: 1.5rem;
