@@ -1,9 +1,9 @@
 $(document).ready(function(){
   $("#nav1 .option .services").click(function(){
-    $("#nav1 .service-content").toggle(1000);
+    $("#nav1 .service-content").slideToggle(1000);
   });
   $("#nav1 .option .services").mouseleave(function(){
-    $("#nav1 .service-content").hide(1000);
+    $("#nav1 .service-content").slideUp(1000);
   });
   // $("#nav1 .option .services").tap(function(){
   //   $("#nav1 .service-content").toggle(1000);

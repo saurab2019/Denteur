@@ -10,7 +10,7 @@ nav{
     width:100%;
     background-color: white;
     z-index: 1;
-    box-shadow: 3px 3px 14px rgb(39, 39, 39), -3px -3px 28px rgb(39, 39, 39);
+    box-shadow: 2px 2px 10px #b1b1b1, -2px -2px 10px #b1b1b1;
 }
 #nav1 .info{
     display:flex;
@@ -83,7 +83,7 @@ nav{
     position: absolute;
     top: 50px;
     left: 50px;
-    background-color: rgba(12, 11, 11, 0.918);
+    background-color: rgb(47, 47, 47);
     display: none;
     width: 131%;
     padding: 2rem 2rem;
@@ -92,7 +92,9 @@ nav{
 }
 #nav1 .option .services .service-content a{
     display: block;
+    padding: .5rem 0;
     color: white;
+    border-bottom:1px solid #38bffe;
 }
 #nav1 .option .services .service-content a:hover{
     color:rgb(182, 185, 187);
@@ -139,6 +141,11 @@ nav{
 }
 #nav2 .option li{
     list-style: none;
+    padding: 1rem;
+    border-bottom: 1px solid grey;
+}
+#nav2 .option .contact{
+    border-bottom: none;
 }
 #nav2 .option li a{
     font-size: 1.7rem;
@@ -154,23 +161,31 @@ nav{
 #topIcon{
     position: fixed;
     right: 13px;
-    bottom: 50px;
+    bottom: 59px;
     background-color: white;
     padding: 1rem 2rem;
     border-radius: 55px;
-    box-shadow: 3px 3px 14px rgb(39, 39, 39), -3px -3px 28px rgb(39, 39, 39);
+    box-shadow: 2px 2px 8px #b1b1b1, -2px -2px 8px #b1b1b1;
+    z-index: 1;
+}
+#topIcon:hover{
+    background-color: rgb(81, 192, 226);
+    box-shadow: 2px 2px 20px #b1b1b1, -2px -2px 20px #b1b1b1;
     z-index: 1;
 }
 #topIcon a{
     font-size: 3rem;
     color: black;
 }
+#topIcon a:hover{
+    color: white;
+}
 /* scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
   }
   ::-webkit-scrollbar-track {
-    background:  linear-gradient(#d6d6f1,#fb4c07,#ff00b3,#4a38ea,#38bffe);
+    background:  linear-gradient(#388bea,#38bffe);
   }
   ::-webkit-scrollbar-thumb {
     background: transparent;
@@ -198,7 +213,7 @@ nav{
     width:15%;
     padding: 0.5rem 0;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #03A9F4;   
+    border-bottom: 2px solid  rgb(35, 175, 218);   
 }
 .footer1 .part1 .Address > div{
    margin-bottom: 1rem;
@@ -252,6 +267,7 @@ nav{
 }
 .footer1 .insta_photo .photos img:hover{
     transform: scale(2);
+    border:1px solid #b1b1b1;
 }
 .footer1 .copyright{
     display: flex;
@@ -317,5 +333,9 @@ nav{
         font-size: 2rem;
         font-style: italic;
         margin: 0;
+    }
+    /* footer */
+    .footer2 .copyright{
+        font-size: 1.5rem;
     }
   }
