@@ -20,6 +20,9 @@ main p,ul{
     line-height: 1.6;
     text-align: justify;
 }
+main p:first-child{
+    text-align: center;
+}
 main ul {
     padding :0 2rem;
 }
